@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router';
+import MemoriesPage from '@/pages/MemoriesPage.vue';
+import router from '@/router';
 
 import { IonicVue } from '@ionic/vue';
 
@@ -23,7 +23,7 @@ import '@ionic/vue/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
-const app = createApp(App)
+const app = createApp(MemoriesPage)
   .use(IonicVue)
   .use(router);
   

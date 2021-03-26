@@ -1,14 +1,17 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
-import MemoriesPage from '../pages/MemoriesPage';
+
+// A esta versió, les views s'importen sense redirect. 
+// Directament es monta el component i es crida a l'import.
 
 const routes = [
   {
     path: '/',
-    redirect: '/memories'
+    redirect: '/Home'
   },
   {
-    path: '/memories',
-    redirect: MemoriesPage
+    path: '/Home',
+    name: 'Home',
+    component: () => import('@/pages/MemoriesPage.vue')
   }
 ]
 const router = createRouter({
