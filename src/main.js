@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import MemoriesPage from '@/pages/MemoriesPage.vue';
+import Home from '@/pages/Home.vue';
 import router from '@/router';
 
 import { IonicVue } from '@ionic/vue';
@@ -23,7 +23,7 @@ import '@ionic/vue/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
-const app = createApp(MemoriesPage)
+const app = createApp(Home)
   .use(IonicVue)
   .use(router);
   

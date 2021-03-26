@@ -11,7 +11,7 @@ const routes = [
   {
     path: '/Home',
     name: 'Home',
-    component: () => import('@/pages/MemoriesPage.vue')
+    component: () => import('@/pages/Home.vue')
   }
 ]
 const router = createRouter({
