@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
-import MemoriesPage from '../pages/MemoriesPage.vue';
+import MemoriesPage from '../pages/MemoriesPage';
 
 const routes = [
   {
